@@ -1,0 +1,10 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "https://cr.hvg.hu"
+    rewrite:
+      "^(.*)": "hub/$1"
+configs:
+  "cr.hvg.hu":
+    auth:
+      username: "hvg-dev"

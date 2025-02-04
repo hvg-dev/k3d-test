@@ -1,0 +1,13 @@
+# exclusion pattern (“unignore”)
+# https://stackoverflow.com/a/5534865
+#####################################
+!.kube
+
+.kube/*
+!.kube/manifests/
+
+.kube/manifests/*
+!.kube/manifests/custom/
+#####################################
+registries.yaml
+.env
